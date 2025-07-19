@@ -1,0 +1,68 @@
+/* ---------- paleta militar ---------- */
+:root{
+  --qm-green:#3b4a3d;
+  --qm-olive:#59664f;
+  --qm-khaki:#d4ccb2;
+  --qm-gold:#d6c17e;
+  --qm-red:#842e2e;
+}
+
+/* fuente stencil */
+@font-face{
+  font-family:"ArmyStencil";
+  src:url("https://fonts.cdnfonts.com/s/19889/ARMYRUST.ttf") format("truetype");
+  font-display:swap;
+}
+
+/* encabezados */
+.qm-msg h2,.qm-msg h3,.qm-msg i{
+  color:var(--qm-gold);
+  font-family:"ArmyStencil","Luminari",serif;
+  letter-spacing:1px;
+  text-shadow:0 0 3px #000;
+}
+
+/* panel situación */
+.qm-status{
+  background:linear-gradient(135deg,var(--qm-olive)0%,var(--qm-green)100%);
+  border:2px dashed var(--qm-khaki);
+  border-radius:4px;
+  color:var(--qm-khaki);
+  padding:.45em .7em;
+  font-family:"ArmyStencil","Cinzel",serif;
+}
+.qm-status b{color:var(--qm-gold);}
+
+/* tabla selección */
+.qm-select-table{width:100%;border-collapse:collapse;margin-bottom:.5em;}
+.qm-select-table th{background:var(--qm-green);color:var(--qm-khaki);padding:.25em;}
+.qm-select-table td{padding:.25em .5em;border-bottom:1px solid #0003;}
+
+/* botones */
+.qm-btn{
+  background:var(--qm-gold);color:#000;
+  border:1px solid #0006;padding:4px 10px;border-radius:3px;
+  font-family:"ArmyStencil",sans-serif;cursor:pointer;
+  transition:transform .1s,box-shadow .1s;
+}
+.qm-btn:hover{transform:translateY(-2px);box-shadow:0 3px 6px #0006;}
+.qm-btn[data-action="lie"]{background:var(--qm-red);color:#fff;}
+
+/* ---------- diálogo militar ---------- */
+.qm-dialog{border:2px solid var(--qm-green);box-shadow:0 0 10px #0008;}
+.qm-dialog .window-header{
+  background:#2f372f;color:var(--qm-khaki);
+  font-family:"ArmyStencil";letter-spacing:1px;
+  border-bottom:1px solid var(--qm-gold);
+}
+.qm-dialog .window-content{
+  background:var(--qm-olive);color:var(--qm-khaki);
+  font-family:"ArmyStencil","Arial",sans-serif;padding:.7em;
+}
+.qm-dialog label{display:block;margin:.5em 0 .25em;font-size:.9rem;}
+.qm-dialog input{
+  width:100%;padding:4px 6px;
+  background:#eee;border:1px solid var(--qm-gold);border-radius:3px;
+}
+.qm-dialog .dialog-buttons{margin-top:.8em;}
+.qm-dialog .qm-btn{width:100%;}

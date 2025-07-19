@@ -1,0 +1,16 @@
+{
+  "name": "queso-mentira",
+  "title": "Queso o Mentira",
+  "description": "Minijuego de dados estilo pulp-militar (Liar’s Dice) para Foundry VTT",
+  "version": "0.4.1",
+  "author": "Manu Romera",
+  "systems": ["*"],
+  "minimumCoreVersion": "11",
+  "compatibleCoreVersion": "13",
+  "esmodules": ["scripts/queso-mentira.js"],
+  "styles": ["styles/queso-mentira-militar.css"],
+  "packs": [],
+  "socket": false,
+  "manifest": "https://tusitio/queso-mentira/module.json",
+  "download": "https://tusitio/queso-mentira/queso-mentira.zip"
+}
