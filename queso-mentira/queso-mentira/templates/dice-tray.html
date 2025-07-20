@@ -1,0 +1,44 @@
+<div class="qm-tray-container">
+
+    <section class="my-dice">
+        <header>
+            <h3>{{localize "QM.tray.yourDice"}}</h3>
+            <span>{{player.dadosRestantes}} ★</span>
+        </header>
+        <div class="dice-area">
+            {{#each player.dados}}
+            <img src="modules/queso-mentira/assets/dice/d6-{{this}}.svg" class="die-icon" alt="Dado con valor {{this}}"/>
+            {{/each}}
+        </div>
+    </section>
+
+    <section class="game-status">
+        <div class="bet-info">
+            <h4>{{localize "QM.tray.currentBet"}}</h4>
+            {{#if session.apuesta}}
+            <div class="bet-display">{{session.apuesta.cantidad}} x <img src="modules/queso-mentira/assets/dice/d6-{{session.apuesta.valor}}.svg" class="die-icon die-sm"/></div>
+            {{else}}
+            <div class="bet-display">{{localize "QM.tray.noBetYet"}}</div>
+            {{/if}}
+        </div>
+
+        {{#if isMyTurn}}
+        <div class="actions">
+            <button class="qm-btn" data-action="raise">
+                <i class="fas fa-arrow-up"></i> {{localize "QM.chat.raiseButton"}}
+            </button>
+            <button class="qm-btn" data-action="lie" {{#unless session.apuesta}}disabled{{/unless}}>
+                <i class="fas fa-bullhorn"></i> {{localize "QM.chat.lieButton"}}
+            </button>
+            <button class="qm-btn" data-action="spoton" {{#unless session.apuesta}}disabled{{/unless}}>
+                <i class="fas fa-crosshairs"></i> {{localize "QM.chat.spotOnButton"}}
+            </button>
+        </div>
+        {{else}}
+        <div class="wait-message">
+            <p>{{localize "QM.tray.waitingTurn"}}</p>
+        </div>
+        {{/if}}
+    </section>
+
+</div>

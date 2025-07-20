@@ -1,0 +1,38 @@
+{
+  "id": "queso-mentira",
+  "title": "Queso o Mentira",
+  "description": "Un minijuego de dados estilo 'Liar's Dice' con temática pulp-militar. Incluye múltiples niveles de IA, reglas personalizables, estado de partida persistente y una interfaz de jugador dedicada.",
+  "version": "0.7.0",
+  "authors": [
+    {
+      "name": "Manu Romera",
+      "url": "https://github.com/ManuRomera"
+    }
+  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "12"
+  },
+  "socket": true,
+  "esmodules": [
+    "scripts/queso-mentira.js"
+  ],
+  "styles": [
+    "styles/queso-mentira-militar.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "manifest": "https://github.com/ManuRomera/foundryvtt-queso-mentira/releases/latest/download/module.json",
+  "download": "https://github.com/ManuRomera/foundryvtt-queso-mentira/releases/latest/download/queso-mentira.zip"
+}
