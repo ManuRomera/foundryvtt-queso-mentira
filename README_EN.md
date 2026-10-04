@@ -1,9 +1,10 @@
 # Queso o Mentira (Liar's Dice)
 
-![Foundry VTT Compatible](https://img.shields.io/badge/Foundry%20VTT-v11%20/%20v12-green)
-[![Version](https://img.shields.io/badge/Version-1.3.1-blue)](https://github.com/ManuRomera/foundryvtt-queso-mentira/releases)
-[![Manifest](https://img.shields.io/badge/Manifest-URL-orange)](https://github.com/ManuRomera/foundryvtt-queso-mentira/releases/latest/download/module.json)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](./LICENSE)
+<p align="center">
+  <a href="https://github.com/ManuRomera/foundryvtt-queso-mentira/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ManuRomera/foundryvtt-queso-mentira?include_prereleases&style=for-the-badge&color=c9962b&label=release"></a>
+  <a href="https://foundryvtt.com"><img alt="Foundry VTT V11 – V12" src="https://img.shields.io/badge/Foundry%20VTT-V11%20%E2%80%93%20V12-57d8c8?style=for-the-badge"></a>
+  <img alt="System" src="https://img.shields.io/badge/system-agnostic-2b3245?style=for-the-badge">
+</p>
 
 **[Versión en Español](./README.md)**
 
